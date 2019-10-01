@@ -1,7 +1,7 @@
 - hosts: all
   become: yes
-  tasks:
+  pre_tasks:
   - name: Gather userdata
-    include_vars: ../group_vars/users.yml
+    include_vars: group_vars/users.yml
   roles:
-  - Linux-Local-Users
+  - /var/lib/awx/projects/Linux-Local-Users
