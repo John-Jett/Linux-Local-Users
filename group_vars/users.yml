@@ -1,0 +1,66 @@
+# users_create_per_user_group: no
+users_deleted:
+- username: ashihab
+- username: sehnis
+- username: jmoreno
+- username: aguadarr
+- username: arioja
+- username: amagana
+- username: dforziat
+- username: dshelton
+- username: fohea
+- username: jcannon
+- username: jcastro
+- username: jgamba
+- username: jlim
+- username: jpulido
+- username: jquiroga
+- username: jrubalca
+- username: jwarr
+- username: kmontgom
+- username: rdircio
+- username: rnair
+- username: rvillanu
+- username: tbenoit
+- username: eespejel
+- username: hbeiskja
+- username: hruiz
+- username: rprasad
+- username: lmana
+- username: nagkommi
+- username: rolazago
+- username: dponessa
+  - username: mpace
+    name: Monte Pace (TSG-DAL-WEB-SYSTEMS-UNIX) (DASID A468169)
+    home: "{{users_home_dir}}/mpace"
+    group: "{{ 'wheel' if ansible_system == 'Linux' else 'sysadmin' }}"
+    uid: 3018
+    password: "{{ '$1$u3fc4lSw$.ac4z63UZGhCGu19nTG610' if ansible_system == 'Linux' else 'Clor6j.uJwTFk' }}"
+    update_password: on_create
+    shell: "{{ '/bin/bash' if ansible_system == 'Linux' else '/usr/bin/bash' if ansible_system == 'SunOS' }}"
+    ssh_key:
+    - "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEAuyYzAGBBbDI+xsFEsNWv1rQwTid44Kgs4DvJQl4mt/FUzYoCV7clmfqqqtaEk3b2UlzUc4fSk28KxC9eh4UuIwMkCPX2+yVxPxKEaFDQ7kIujbhstSTwtfZfIpMIjhT4JOsgJNkpjrybpajKhS9bRphigp7jdi0CE1t/y+poOw8="
+    - "ssh-dss AAAAB3NzaC1kc3MAAACBAJnRTaYLzObVpmk5go0GiKHkfteNtuDbmia08V0QTJ5EAAxyoa1RYSXO1NgQr/GJ7SRejhaV+WKea0d3ibMccW6ZwwA+LqAMc5U6/6DxSHNmBlcNELKOoon6+I6nlNHCocW5PWOx/sawEf1wfi/eETxeYMHq7EL3AokFCC1Q7jDjAAAAFQDpZ2nHVw2u8cYAmsAKvJEcL8aqTwAAAIBwnB6vTyM+7XflJE9HUromFDIhDIcUoOoAmtxjJU2GwIJoirfJeYYLTqMSFUXLCrv7RUAPNpcjkwvysyD4Dazhu39qQErPMkbI+rLX8CVgkdomwQTjLeqxtiwT+dKo5cMh+p0O1qxld1vSBg+XBnhLgBpcg+Ume6eelwyvLNq6uQAAAIAQ9MBe01syj11O0U3f3p6pKhhnbeG48CcNEw8vTfRtJFP6HGO/I4aLcXXBXzCExFO5XQXO5XBpjfe0jEesEUy7SsJdGGNqGJzN9Zzn+4LfEFiouPllOV4g/WwHAvq8ZKo4pjgrF1FKDEDbBEtMJlwZjGTxGoKF8wBMg/Hk89Ku5w=="
+    - "ssh-dss AAAAB3NzaC1kc3MAAACBAMVqP20NL7sDHSUcRvovQjMffguw6XP8dKPRz13MxKdoMJhZatnl5jdtgo/xQBtjNLUGi3EPOwVH9EkNwdnuZWvmrvWduaKmRM1pHUQcltkdnDFfoYkaJHr0zIonPzbN61YzotOG21RJ2Q+4xSxxhyhWjYxjL0kg78i1kTwjm7bDAAAAFQDeL8BV2IdA0Myq0sFearBVjEdhYQAAAIAKjLj53IAkH8Ehkc6QSsrGgFlVkiwGFaThVwK5rIBYT31VXBaSAzdYx/RSvL4O+1f3jU6OuiQohC6Ovk3znvcSLRLl3WIGlrj2k3WIp4foNqg4LrgeIsIH1bl86mqY9HW6F8w5InxM379gBlZk5m0zLjn2nfHyJTX7M1yHSCxElgAAAIEAolDJ1q2fIEEhmU9ugToxMQSlqqJB6J4LWa5UPMGOIzs1Vb7Zlo7tAbiFMGNzfZBYQq7HUA/W2UogMgDbJoOOZJUb+WfapdiTSxzVfT1ZquKwxGrsSVpOWLUb3dydOq2OkANSrtGbk8apahSrnL4sMGqWb/opeBc3P3ZCAmP4jdQ="
+    - "ssh-dss AAAAB3NzaC1kc3MAAACBAOILnZP4FbUhdjWMobGORGAGbBUdeY8B4SbwnlNJiM2grhQTG4hV/5v8xXI8LqqsYNe+OPz1pAZ3OR5T8dvn+IxLNtwuidkKURXCBQ4dI08BNCfpqSya3xR8a8YP98lhm0cDQKh1LLHIDGrg9UzOqzArdMmRO68ThFd3OtyAXpoVAAAAFQCeyuhloD2bR5ctCRWP+spkLxYFjQAAAIAVXBBVlgbCwF6xxBSCkbLH7lAPCJ8L1B9goKbLUJJFqlKOyv0DIHLffc/ceRFASxpBOC/I985/FXSk5XgKy/osgBo7zfpNOt6MdceSAtBfxNLU77BpdVF1a9GCS63rd0hydvJgQAHUMhohZ72YPzB6N1TUPOlc03PqW/JBfSDZwwAAAIA/V6Z8olbyQVcdcqP6+ELUEuy1sJiu6boYipx1aolXK8LT5SdtRiFSmF11WZJz9s6KS8OuG6RaGIyVfPiEbk6/Ai3DKcaWYyeInz+woyS7sZ92BSroPdlO+jZs2mFsE65hSXJva+ITFLtw2Sh9CV3c/sm+HvKucbfY8h7ZBeTbgA=="
+  - username: apatel
+    name: Avinash Patel (TSG-DAL-WEB-SYSTEMS-UNIX) (DASID A670915)
+    home: "{{users_home_dir}}/apatel"
+    group: "{{admin_group}}"
+    uid: 3385
+    password: "$6$b6Vgw/Wu$DN/DDNGd37NaHpQQLyr1HrybHqKtxIDrvkfSaSAlSRd32z0/WE/Pe.z3CJ/.rFII0lhZj8mPc48ZwGY8dSBkp1"
+    update_password: on_create
+    shell: "{{ '/bin/bash' if ansible_system == 'Linux' else '/usr/bin/bash' if ansible_system == 'SunOS' }}"
+    ssh_key:
+    - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7r1HVBGTN+4qbBHAJWF0Yx/QJf/tRcTSoYi2q8qy820UDFW3vvjff6es/l2ooReNNgRO3gJMcjobnKrSF8lfek/qlfV9D0AuFKiQuttoZUjh1ntzmSxTUSZiWj70u4fDZZpXWRnQE7jgpxb9MZMXczCca6fjGosG/W40PMR5vX5ZL5C1ey16ymMl/G5qqQYAfBt7YLfC8axdZc5WUVsTFRuhhW3ceNSq8woGTujqSrrZjZSX5VcfckhRx3hbQkPH90d1X2RQ5mU8soHN4bj700gZIt7ndxf41wvAxlCVfgTnyDbZo38PgwQcV0xux+/I2rNYyBA5MM6IfjaVWQR4p"
+  - username: lgeorge
+    name: Lijo George (TSG-DAL-WEB-SYSTEMS-UNIX) (DASID A462787)
+    home: "{{ users_home_dir}}/lgeorge"
+    group: "{{admin_group}}"
+    uid: 3107
+    password: "$6$B8UKQG20EH$yT3vMKN2MtO0blCY.AWwfJbKWq1cqQuo9K1xZblgSVl0nmb7lqx8NjLxI.qtLIEVN34G60UJUIzjdo/EM/Ylq1"
+    update_password: on_create
+    shell: "{{ '/bin/bash' if ansible_system == 'Linux' else '/usr/bin/bash' if ansible_system == 'SunOS' }}"
+    ssh_key:
+    - "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEAwpDPiFbS/3Zb4k6rpUMKfIHxzekFyysbvhX3L1lMABX0qoHb6PhRgbL/QYtahT6TEu61IwlEVTf/IJS9xglEnaiD/vtlSOPgvVAGdSliN7NKLkAGT+IjI2LA/lpbCe6jzOIYGTc2bZ6KKG7jY6vphEImXHKd48siYZfBWABrBKc="
+    - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDh9VOCUYcGrFCsDgUv2PK4kpYqooBf4ZIjLzn8l2C4EGFnLX9rtUJunn+VXdkwG/oXf/objoblza64XN0hp3gb9ABAhCyvgrUxvBKeJrpDFbcvOvNVLVYdmsFfjJq3h/fYaIGuOM8AiBmCd/YbDd+XWcsKWIwU7Ct15FiaDLsuXlaICigZdEB/VhwVSdTC9VSzycLoSRyZQe+dk0KGdlr7j4kdf9rcLu0DGi6T+elNmvoV/wUSxLIQ0e8xTEvLzk2h0rV4gH8HKEmoW57nqq0R01jBJlS1H8zahSfjSTbKfg0EYJmAqMyhXi1ixmdhzvfMGFBKL+tmc2ZvrdaE822h"
