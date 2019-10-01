@@ -1,6 +1,7 @@
----
-
 - hosts: all
   become: yes
+  tasks:
+  - name: Gather userdata
+    include_vars: /etc/ansible/group_vars/users.yml
   roles:
-    - Atos-Linux
+  - Linux-Local-Users
