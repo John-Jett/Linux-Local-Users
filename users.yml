@@ -2,6 +2,6 @@
   become: yes
   tasks:
   - name: Gather userdata
-    include_vars: /etc/ansible/group_vars/users.yml
+    include_vars: ../group_vars/users.yml
   roles:
   - Linux-Local-Users
